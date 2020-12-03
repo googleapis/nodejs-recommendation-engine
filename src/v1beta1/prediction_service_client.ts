@@ -345,7 +345,7 @@ export class PredictionServiceClient {
    * Makes a recommendation prediction. If using API Key based authentication,
    * the API Key must be registered using the
    * {@link google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry|PredictionApiKeyRegistry}
-   * service. [Learn more](/recommendations-ai/docs/setting-up#register-key).
+   * service. [Learn more](https://cloud.google.com/recommendations-ai/docs/setting-up).
    *
    * @param {Object} request
    *   The request object that will be sent.
@@ -737,9 +737,7 @@ export class PredictionServiceClient {
   predictAsync(
     request?: protos.google.cloud.recommendationengine.v1beta1.IPredictRequest,
     options?: CallOptions
-  ): AsyncIterable<
-    protos.google.cloud.recommendationengine.v1beta1.PredictResponse.IPredictionResult
-  > {
+  ): AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.PredictResponse.IPredictionResult> {
     request = request || {};
     options = options || {};
     options.otherArgs = options.otherArgs || {};
@@ -756,9 +754,7 @@ export class PredictionServiceClient {
       this.innerApiCalls['predict'] as GaxCall,
       (request as unknown) as RequestType,
       callSettings
-    ) as AsyncIterable<
-      protos.google.cloud.recommendationengine.v1beta1.PredictResponse.IPredictionResult
-    >;
+    ) as AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.PredictResponse.IPredictionResult>;
   }
   // --------------------
   // -- Path templates --

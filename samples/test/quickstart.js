@@ -29,7 +29,7 @@ const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 
 const cwd = path.join(__dirname, '..');
 
-const client = new {UserEventServiceClient}();
+const client = new UserEventServiceClient();
 
 describe('Quickstart', () => {
   //TODO: remove this if not using the projectId
@@ -42,9 +42,7 @@ describe('Quickstart', () => {
   });
 
   it('should run quickstart', async () => {
-    //TODO: remove this disability
-    // eslint-disable-next-line no-unused-vars
-    const stdout = execSync('node ./quickstart.js', {cwd});
-    //assert(stdout, stdout !== null);
+    const stdout = execSync(`node ./quickstart.js projects/${projectId}/locations/global/catalogs/default_catalog/eventStores/default_event_store`, {cwd});  
+    assert(stdout.match(/\[\]/));
   });
 });

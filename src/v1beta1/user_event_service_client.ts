@@ -1188,9 +1188,7 @@ export class UserEventServiceClient {
   listUserEventsAsync(
     request?: protos.google.cloud.recommendationengine.v1beta1.IListUserEventsRequest,
     options?: CallOptions
-  ): AsyncIterable<
-    protos.google.cloud.recommendationengine.v1beta1.IUserEvent
-  > {
+  ): AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.IUserEvent> {
     request = request || {};
     options = options || {};
     options.otherArgs = options.otherArgs || {};
@@ -1207,9 +1205,7 @@ export class UserEventServiceClient {
       this.innerApiCalls['listUserEvents'] as GaxCall,
       (request as unknown) as RequestType,
       callSettings
-    ) as AsyncIterable<
-      protos.google.cloud.recommendationengine.v1beta1.IUserEvent
-    >;
+    ) as AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.IUserEvent>;
   }
   // --------------------
   // -- Path templates --
