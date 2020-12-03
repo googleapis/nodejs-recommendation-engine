@@ -1,0 +1,14 @@
+{
+  "name": "recommendationengine",
+  "name_pretty": "Recommendations AI",
+  "product_documentation": "https://cloud.google.com/recommendations-ai/",
+  "client_documentation": "https://googleapis.dev/nodejs/recommendationengine/latest/",
+  "issue_tracker": "https://github.com/googleapis/nodejs-recommendation-engine/issues",
+  "release_level": "BETA",
+  "language": "nodejs",
+  "repo": "googleapis/nodejs-recommendation-engine",
+  "distribution_name": "@google-cloud/recommendation-engine",
+  "api_id": "recommendationengine.googleapis.com",
+  "requires_billing": true
+}
+

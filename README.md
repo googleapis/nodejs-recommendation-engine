@@ -5,7 +5,7 @@
 # [Recommendations AI: Node.js Client](https://github.com/googleapis/nodejs-recommendation-engine)
 
 [![release level](https://img.shields.io/badge/release%20level-beta-yellow.svg?style=flat)](https://cloud.google.com/terms/launch-stages)
-[![npm version](https://img.shields.io/npm/v/recommendationengine.svg)](https://www.npmjs.org/package/recommendationengine)
+[![npm version](https://img.shields.io/npm/v/@google-cloud/recommendation-engine.svg)](https://www.npmjs.org/package/@google-cloud/recommendation-engine)
 [![codecov](https://img.shields.io/codecov/c/github/googleapis/nodejs-recommendation-engine/master.svg?style=flat)](https://codecov.io/gh/googleapis/nodejs-recommendation-engine)
 
 
@@ -51,7 +51,7 @@ Google APIs Client Libraries, in [Client Libraries Explained][explained].
 ### Installing the client library
 
 ```bash
-npm install recommendationengine
+npm install @google-cloud/recommendation-engine
 ```
 
 
@@ -62,9 +62,7 @@ npm install recommendationengine
 
 // remove this line after package is released
 // eslint-disable-next-line node/no-missing-require
-const {
-  UserEventServiceClient,
-} = require('@google-cloud/recommendation-engine');
+const {UserEventServiceClient} = require('@google-cloud/recommendation-engine');
 
 // TODO(developer): replace with your prefered project ID.
 // const projectId = 'my-project'
@@ -75,12 +73,10 @@ const client = new {UserEventServiceClient}();
 
 //TODO(library generator): write the actual function you will be testing
 async function doSomething() {
-  console.log(
-    'Developer! Change this code so that it shows how to use the library! See comments below on structure.'
-  );
-  // const [thing] = await client.methodName({
-  // });
-  // console.info(thing);
+ console.log('Developer! Change this code so that it shows how to use the library! See comments below on structure.')
+ // const [thing] = await client.methodName({
+ // });
+ // console.info(thing);
 }
 doSomething();
 
