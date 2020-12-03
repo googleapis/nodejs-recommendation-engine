@@ -42,7 +42,10 @@ describe('Quickstart', () => {
   });
 
   it('should run quickstart', async () => {
-    const stdout = execSync(`node ./quickstart.js projects/${projectId}/locations/global/catalogs/default_catalog/eventStores/default_event_store`, {cwd});  
+    const stdout = execSync(
+      `node ./quickstart.js projects/${projectId}/locations/global/catalogs/default_catalog/eventStores/default_event_store`,
+      {cwd}
+    );
     assert(stdout.match(/\[\]/));
   });
 });
