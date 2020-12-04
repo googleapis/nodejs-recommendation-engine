@@ -715,9 +715,7 @@ export class PredictionApiKeyRegistryClient {
   listPredictionApiKeyRegistrationsAsync(
     request?: protos.google.cloud.recommendationengine.v1beta1.IListPredictionApiKeyRegistrationsRequest,
     options?: CallOptions
-  ): AsyncIterable<
-    protos.google.cloud.recommendationengine.v1beta1.IPredictionApiKeyRegistration
-  > {
+  ): AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.IPredictionApiKeyRegistration> {
     request = request || {};
     options = options || {};
     options.otherArgs = options.otherArgs || {};
@@ -734,9 +732,7 @@ export class PredictionApiKeyRegistryClient {
       this.innerApiCalls['listPredictionApiKeyRegistrations'] as GaxCall,
       (request as unknown) as RequestType,
       callSettings
-    ) as AsyncIterable<
-      protos.google.cloud.recommendationengine.v1beta1.IPredictionApiKeyRegistration
-    >;
+    ) as AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.IPredictionApiKeyRegistration>;
   }
   // --------------------
   // -- Path templates --

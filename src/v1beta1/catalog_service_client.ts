@@ -1104,9 +1104,7 @@ export class CatalogServiceClient {
   listCatalogItemsAsync(
     request?: protos.google.cloud.recommendationengine.v1beta1.IListCatalogItemsRequest,
     options?: CallOptions
-  ): AsyncIterable<
-    protos.google.cloud.recommendationengine.v1beta1.ICatalogItem
-  > {
+  ): AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.ICatalogItem> {
     request = request || {};
     options = options || {};
     options.otherArgs = options.otherArgs || {};
@@ -1123,9 +1121,7 @@ export class CatalogServiceClient {
       this.innerApiCalls['listCatalogItems'] as GaxCall,
       (request as unknown) as RequestType,
       callSettings
-    ) as AsyncIterable<
-      protos.google.cloud.recommendationengine.v1beta1.ICatalogItem
-    >;
+    ) as AsyncIterable<protos.google.cloud.recommendationengine.v1beta1.ICatalogItem>;
   }
   // --------------------
   // -- Path templates --
