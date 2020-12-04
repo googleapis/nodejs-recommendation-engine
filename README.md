@@ -74,15 +74,12 @@ const {
 const client = new UserEventServiceClient();
 
 //TODO(library generator): write the actual function you will be testing
-async function doSomething() {
-  console.log(
-    'Developer! Change this code so that it shows how to use the library! See comments below on structure.'
-  );
-  // const [thing] = await client.methodName({
-  // });
-  // console.info(thing);
+async function listUserEvents() {
+  const userEvents = await client.listUserEvents({parent});
+  console.info(userEvents);
 }
-doSomething();
+
+listUserEvents();
 
 ```
 

@@ -345,7 +345,7 @@ export class PredictionServiceClient {
    * Makes a recommendation prediction. If using API Key based authentication,
    * the API Key must be registered using the
    * {@link google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry|PredictionApiKeyRegistry}
-   * service. [Learn more](https://cloud.google.com/recommendations-ai/docs/setting-up).
+   * service. [Learn more](/recommendations-ai/docs/setting-up#register-key).
    *
    * @param {Object} request
    *   The request object that will be sent.
