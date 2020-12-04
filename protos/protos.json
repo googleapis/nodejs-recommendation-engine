@@ -301,7 +301,18 @@
                             "(google.api.http).post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*}/catalogItems",
                             "(google.api.http).body": "catalog_item",
                             "(google.api.method_signature)": "parent,catalog_item"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*}/catalogItems",
+                                "body": "catalog_item"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,catalog_item"
+                            }
+                          ]
                         },
                         "GetCatalogItem": {
                           "requestType": "GetCatalogItemRequest",
@@ -309,7 +320,17 @@
                           "options": {
                             "(google.api.http).get": "/v1beta1/{name=projects/*/locations/*/catalogs/*/catalogItems/**}",
                             "(google.api.method_signature)": "name"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "get": "/v1beta1/{name=projects/*/locations/*/catalogs/*/catalogItems/**}"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "name"
+                            }
+                          ]
                         },
                         "ListCatalogItems": {
                           "requestType": "ListCatalogItemsRequest",
@@ -317,7 +338,17 @@
                           "options": {
                             "(google.api.http).get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*}/catalogItems",
                             "(google.api.method_signature)": "parent,filter"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*}/catalogItems"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,filter"
+                            }
+                          ]
                         },
                         "UpdateCatalogItem": {
                           "requestType": "UpdateCatalogItemRequest",
@@ -326,7 +357,18 @@
                             "(google.api.http).patch": "/v1beta1/{name=projects/*/locations/*/catalogs/*/catalogItems/**}",
                             "(google.api.http).body": "catalog_item",
                             "(google.api.method_signature)": "name,catalog_item,update_mask"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "patch": "/v1beta1/{name=projects/*/locations/*/catalogs/*/catalogItems/**}",
+                                "body": "catalog_item"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "name,catalog_item,update_mask"
+                            }
+                          ]
                         },
                         "DeleteCatalogItem": {
                           "requestType": "DeleteCatalogItemRequest",
@@ -334,7 +376,17 @@
                           "options": {
                             "(google.api.http).delete": "/v1beta1/{name=projects/*/locations/*/catalogs/*/catalogItems/**}",
                             "(google.api.method_signature)": "name"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "delete": "/v1beta1/{name=projects/*/locations/*/catalogs/*/catalogItems/**}"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "name"
+                            }
+                          ]
                         },
                         "ImportCatalogItems": {
                           "requestType": "ImportCatalogItemsRequest",
@@ -345,7 +397,24 @@
                             "(google.longrunning.operation_info).response_type": "google.cloud.recommendationengine.v1beta1.ImportCatalogItemsResponse",
                             "(google.longrunning.operation_info).metadata_type": "google.cloud.recommendationengine.v1beta1.ImportMetadata",
                             "(google.api.method_signature)": "parent,request_id,input_config,errors_config"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*}/catalogItems:import",
+                                "body": "*"
+                              }
+                            },
+                            {
+                              "(google.longrunning.operation_info)": {
+                                "response_type": "google.cloud.recommendationengine.v1beta1.ImportCatalogItemsResponse",
+                                "metadata_type": "google.cloud.recommendationengine.v1beta1.ImportMetadata"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,request_id,input_config,errors_config"
+                            }
+                          ]
                         }
                       }
                     },
@@ -965,7 +1034,18 @@
                             "(google.api.http).post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/predictionApiKeyRegistrations",
                             "(google.api.http).body": "*",
                             "(google.api.method_signature)": "parent,prediction_api_key_registration"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/predictionApiKeyRegistrations",
+                                "body": "*"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,prediction_api_key_registration"
+                            }
+                          ]
                         },
                         "ListPredictionApiKeyRegistrations": {
                           "requestType": "ListPredictionApiKeyRegistrationsRequest",
@@ -973,7 +1053,17 @@
                           "options": {
                             "(google.api.http).get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/predictionApiKeyRegistrations",
                             "(google.api.method_signature)": "parent"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/predictionApiKeyRegistrations"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent"
+                            }
+                          ]
                         },
                         "DeletePredictionApiKeyRegistration": {
                           "requestType": "DeletePredictionApiKeyRegistrationRequest",
@@ -981,7 +1071,17 @@
                           "options": {
                             "(google.api.http).delete": "/v1beta1/{name=projects/*/locations/*/catalogs/*/eventStores/*/predictionApiKeyRegistrations/*}",
                             "(google.api.method_signature)": "name"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "delete": "/v1beta1/{name=projects/*/locations/*/catalogs/*/eventStores/*/predictionApiKeyRegistrations/*}"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "name"
+                            }
+                          ]
                         }
                       }
                     },
@@ -1076,7 +1176,18 @@
                             "(google.api.http).post": "/v1beta1/{name=projects/*/locations/*/catalogs/*/eventStores/*/placements/*}:predict",
                             "(google.api.http).body": "*",
                             "(google.api.method_signature)": "name,user_event"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "post": "/v1beta1/{name=projects/*/locations/*/catalogs/*/eventStores/*/placements/*}:predict",
+                                "body": "*"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "name,user_event"
+                            }
+                          ]
                         }
                       }
                     },
@@ -1202,7 +1313,18 @@
                             "(google.api.http).post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents:write",
                             "(google.api.http).body": "user_event",
                             "(google.api.method_signature)": "parent,user_event"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents:write",
+                                "body": "user_event"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,user_event"
+                            }
+                          ]
                         },
                         "CollectUserEvent": {
                           "requestType": "CollectUserEventRequest",
@@ -1210,7 +1332,17 @@
                           "options": {
                             "(google.api.http).get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents:collect",
                             "(google.api.method_signature)": "parent,user_event,uri,ets"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents:collect"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,user_event,uri,ets"
+                            }
+                          ]
                         },
                         "ListUserEvents": {
                           "requestType": "ListUserEventsRequest",
@@ -1218,7 +1350,17 @@
                           "options": {
                             "(google.api.http).get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents",
                             "(google.api.method_signature)": "parent,filter"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "get": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,filter"
+                            }
+                          ]
                         },
                         "PurgeUserEvents": {
                           "requestType": "PurgeUserEventsRequest",
@@ -1229,7 +1371,24 @@
                             "(google.longrunning.operation_info).response_type": "google.cloud.recommendationengine.v1beta1.PurgeUserEventsResponse",
                             "(google.longrunning.operation_info).metadata_type": "google.cloud.recommendationengine.v1beta1.PurgeUserEventsMetadata",
                             "(google.api.method_signature)": "parent,filter,force"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents:purge",
+                                "body": "*"
+                              }
+                            },
+                            {
+                              "(google.longrunning.operation_info)": {
+                                "response_type": "google.cloud.recommendationengine.v1beta1.PurgeUserEventsResponse",
+                                "metadata_type": "google.cloud.recommendationengine.v1beta1.PurgeUserEventsMetadata"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,filter,force"
+                            }
+                          ]
                         },
                         "ImportUserEvents": {
                           "requestType": "ImportUserEventsRequest",
@@ -1240,7 +1399,24 @@
                             "(google.longrunning.operation_info).response_type": "google.cloud.recommendationengine.v1beta1.ImportUserEventsResponse",
                             "(google.longrunning.operation_info).metadata_type": "google.cloud.recommendationengine.v1beta1.ImportMetadata",
                             "(google.api.method_signature)": "parent,request_id,input_config,errors_config"
-                          }
+                          },
+                          "parsedOptions": [
+                            {
+                              "(google.api.http)": {
+                                "post": "/v1beta1/{parent=projects/*/locations/*/catalogs/*/eventStores/*}/userEvents:import",
+                                "body": "*"
+                              }
+                            },
+                            {
+                              "(google.longrunning.operation_info)": {
+                                "response_type": "google.cloud.recommendationengine.v1beta1.ImportUserEventsResponse",
+                                "metadata_type": "google.cloud.recommendationengine.v1beta1.ImportMetadata"
+                              }
+                            },
+                            {
+                              "(google.api.method_signature)": "parent,request_id,input_config,errors_config"
+                            }
+                          ]
                         }
                       }
                     },
@@ -2677,7 +2853,17 @@
                   "options": {
                     "(google.api.http).get": "/v1/{name=operations}",
                     "(google.api.method_signature)": "name,filter"
-                  }
+                  },
+                  "parsedOptions": [
+                    {
+                      "(google.api.http)": {
+                        "get": "/v1/{name=operations}"
+                      }
+                    },
+                    {
+                      "(google.api.method_signature)": "name,filter"
+                    }
+                  ]
                 },
                 "GetOperation": {
                   "requestType": "GetOperationRequest",
@@ -2685,7 +2871,17 @@
                   "options": {
                     "(google.api.http).get": "/v1/{name=operations/**}",
                     "(google.api.method_signature)": "name"
-                  }
+                  },
+                  "parsedOptions": [
+                    {
+                      "(google.api.http)": {
+                        "get": "/v1/{name=operations/**}"
+                      }
+                    },
+                    {
+                      "(google.api.method_signature)": "name"
+                    }
+                  ]
                 },
                 "DeleteOperation": {
                   "requestType": "DeleteOperationRequest",
@@ -2693,7 +2889,17 @@
                   "options": {
                     "(google.api.http).delete": "/v1/{name=operations/**}",
                     "(google.api.method_signature)": "name"
-                  }
+                  },
+                  "parsedOptions": [
+                    {
+                      "(google.api.http)": {
+                        "delete": "/v1/{name=operations/**}"
+                      }
+                    },
+                    {
+                      "(google.api.method_signature)": "name"
+                    }
+                  ]
                 },
                 "CancelOperation": {
                   "requestType": "CancelOperationRequest",
@@ -2702,7 +2908,18 @@
                     "(google.api.http).post": "/v1/{name=operations/**}:cancel",
                     "(google.api.http).body": "*",
                     "(google.api.method_signature)": "name"
-                  }
+                  },
+                  "parsedOptions": [
+                    {
+                      "(google.api.http)": {
+                        "post": "/v1/{name=operations/**}:cancel",
+                        "body": "*"
+                      }
+                    },
+                    {
+                      "(google.api.method_signature)": "name"
+                    }
+                  ]
                 },
                 "WaitOperation": {
                   "requestType": "WaitOperationRequest",

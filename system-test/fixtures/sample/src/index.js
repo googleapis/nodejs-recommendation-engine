@@ -17,7 +17,7 @@
 // ** All changes to this file may be overwritten. **
 
 /* eslint-disable node/no-missing-require, no-unused-vars */
-const @google-cloud/recommendation-engine = require('recommendationengine');
+const recommendationengine = require('recommendationengine');
 
 function main() {
   const catalogServiceClient = new recommendationengine.CatalogServiceClient();

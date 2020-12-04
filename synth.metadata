@@ -3,8 +3,8 @@
     {
       "git": {
         "name": ".",
-        "remote": "sso://user/sofialeon/nodejs-recommendation-engine",
-        "sha": "a424f4fd4c452648cce82ca6734639baf1f5edc1"
+        "remote": "https://github.com/googleapis/nodejs-recommendation-engine.git",
+        "sha": "8a99aef26dd0e0f7d47087edc2c330e21246f03a"
       }
     },
     {

@@ -62,7 +62,9 @@ npm install @google-cloud/recommendation-engine
 
 // remove this line after package is released
 // eslint-disable-next-line node/no-missing-require
-const {UserEventServiceClient} = require('@google-cloud/recommendation-engine');
+const {
+  UserEventServiceClient,
+} = require('@google-cloud/recommendation-engine');
 
 // TODO(developer): replace with your prefered project ID.
 // const projectId = 'my-project'
@@ -73,10 +75,12 @@ const client = new {UserEventServiceClient}();
 
 //TODO(library generator): write the actual function you will be testing
 async function doSomething() {
- console.log('Developer! Change this code so that it shows how to use the library! See comments below on structure.')
- // const [thing] = await client.methodName({
- // });
- // console.info(thing);
+  console.log(
+    'Developer! Change this code so that it shows how to use the library! See comments below on structure.'
+  );
+  // const [thing] = await client.methodName({
+  // });
+  // console.info(thing);
 }
 doSomething();
 

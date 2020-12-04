@@ -21,7 +21,7 @@ import {
   PredictionApiKeyRegistryClient,
   PredictionServiceClient,
   UserEventServiceClient,
-} from '@google-cloud/recommendation-engine';
+} from 'recommendationengine';
 
 // check that the client class type name can be used
 function doStuffWithCatalogServiceClient(client: CatalogServiceClient) {
